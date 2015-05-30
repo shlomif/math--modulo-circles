@@ -1,0 +1,9 @@
+=encoding utf8
+
+=head1 ABOUT
+
+TeX sources for a summary of my findings regarding a certain modulo-graphs
+mathematical problem.
+
+=cut
+

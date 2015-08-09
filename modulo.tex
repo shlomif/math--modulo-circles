@@ -16,8 +16,8 @@
 \chapter{Modulo Circles}
 \section{Modulo Graphs}
 
-Given a natural number $ n $, we will look at the mapping 
-$ f(i) = 2i ~ (mod ~ n) $ for $ 0 \leq i \leq n-1 $. Furthermore, we 
+Given a natural number $ n $, we will look at the mapping
+$ f(i) = 2i ~ (mod ~ n) $ for $ 0 \leq i \leq n-1 $. Furthermore, we
 will draw a directed graph whose nodes are the numbers in that range.
 
 Figure \ref{fig:graph-12-1} shows a sample graph for $ i = 12 $ :
@@ -45,8 +45,8 @@ Modulo Graph for 8
 \label{fig:graphs-of-powers-of-2}
 \end{figure}
 
-As can be seen in Figure \ref{fig:graphs-of-powers-of-2} ~for whole powers 
-of 2,  the modulo graph is a binary tree, for which the fathers of $ i $ are 
+As can be seen in Figure \ref{fig:graphs-of-powers-of-2} ~for whole powers
+of 2,  the modulo graph is a binary tree, for which the fathers of $ i $ are
 $ i/2 $ and $ i/2 + n/2 $. The root of the tree is $ n/2 $ which leads to 0.
 
 Proving this is relatively trivial, so I won't go into there.
@@ -68,8 +68,8 @@ Modulo Graph for 12
 \label{fig:graphs-of-3-and-12}
 \end{figure}
 
-One can notice that the modulo graph of 12 is in fact the modulo graph 
-of 3 multiplied by 4, while every vertex of this graph serves as the "zero" 
+One can notice that the modulo graph of 12 is in fact the modulo graph
+of 3 multiplied by 4, while every vertex of this graph serves as the "zero"
 for a 4-like tree. This is in fact the general case for $ n' \cdot 2^{e} $,
 and again it can be easily proven.
 
@@ -82,10 +82,10 @@ Assume that $ a $ is a given modulo. In order to find the size of its
 circle, one has to find what is the $ n $ so that $ a\cdot2^{n} $ modulo
 the reminder gives $ a $.
 
-We will first deal only with prime numbers (the circle's modulo will be 
+We will first deal only with prime numbers (the circle's modulo will be
 indicated with $ p $.
 
-% Note that the ampersand sign (&) is a separator 
+% Note that the ampersand sign (&) is a separator
 % that separates the columns of the table. The entire table is
 % centered around the middle cell in each row.
 \begin{eqnarray*}
@@ -107,7 +107,7 @@ and one can see that $ 2^{n} = p \cdot m' + 1 $.
 
 $ n $ ought to be minimal, and that is the size of the circle. One can
 see that when the dividing number is prime, there isn't any significance
-for $ a $ and thus, the size of all the circles (beside that of 0) is 
+for $ a $ and thus, the size of all the circles (beside that of 0) is
 equal!
 
 From this it can be seen that their number may be derived by the forumula
@@ -130,8 +130,8 @@ factors.
 
 Let's mark the unique circle length of a number $ n $ by $ Sh(n) $.
 
-In that case, the number of unique circles of $ p^{n} $ is 
-$ \frac{p^{n}(p-1)}{Sh(p^{n})} $. Let's prove that it is a constant, which 
+In that case, the number of unique circles of $ p^{n} $ is
+$ \frac{p^{n}(p-1)}{Sh(p^{n})} $. Let's prove that it is a constant, which
 is dependant on $ p $ alone. It can be seen that in order to prove that,
 one can prove that $ Sh(p^{n+1}) = p \cdot Sh(p^{n}) $.
 
@@ -160,7 +160,7 @@ A_{1} = m \cdot a \cdot p^{n}
 \]
 
 Because $ p $ is prime, it would divide by $ p^{n+1} $ only when $ m $ is equal
-to $ p $. Thus, one has to raise everything to the power of $ p $ and thus, 
+to $ p $. Thus, one has to raise everything to the power of $ p $ and thus,
 according to the laws of exponentation $ t'=p \cdot t $. Q.E.D.
 
 \section{Determining the unique circle length of a product}
@@ -174,10 +174,10 @@ length of each one, fully.
 
 This proves that the unique circle length of the product is divisable by the
 lcm, but does not prove that it is equal to it. To prove the latter
-conjectyre, one can rely on the fact that the field of the modulos of 
-the product is spanned by the modulo fields of the factors (assuming 
-they are indeed two stranger numbers). Thus, two respective given 
-modulos for each of the factors implies one unique modulo for the 
+conjectyre, one can rely on the fact that the field of the modulos of
+the product is spanned by the modulo fields of the factors (assuming
+they are indeed two stranger numbers). Thus, two respective given
+modulos for each of the factors implies one unique modulo for the
 product. Q.E.D.
 
 \section{Acknowledgements}
@@ -185,7 +185,7 @@ product. Q.E.D.
 The material in these pages is based on a lecture I attended by
 Prof. Amos Ehrlich (http://www.tau.ac.il/~amos1/) of Tel-Aviv University.
 
-The modulo graphs were rendered using GraphViz 
+The modulo graphs were rendered using GraphViz
 (http://www.research.att.com/sw/tools/graphviz/)
 
 \end{document}
